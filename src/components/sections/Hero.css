@@ -1,0 +1,67 @@
+.hero {
+     position: relative;
+     height: 600px;
+     background-image: url('/src/assets/images/hero-bg.jpg');
+     background-size: cover;
+     background-position: center;
+     color: white;
+   }
+
+   .hero-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0 1rem;
+   }
+
+   .hero-title {
+     font-size: 2.5rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+   }
+
+   .hero-title span.green {
+     color: #2F855A;
+   }
+
+   .hero-subtitle {
+     font-size: 1rem;
+     margin-bottom: 1.5rem;
+     max-width: 600px;
+   }
+
+   .hero-buttons {
+     display: flex;
+     gap: 1rem;
+   }
+
+   .hero-button {
+     padding: 0.75rem 1.5rem;
+     border-radius: 0.25rem;
+     font-size: 1rem;
+     cursor: pointer;
+   }
+
+   .hero-button.learn {
+     background-color: #2F855A;
+     color: white;
+     border: none;
+   }
+
+   .hero-button.consult {
+     background-color: transparent;
+     color: white;
+     border: 2px solid white;
+   }
+
+   .hero-button:hover {
+     opacity: 0.9;
+   }
