@@ -1,6 +1,14 @@
 .app-container {
   width: 100%;
-  padding: 0;
+  padding: 0 15px; /* Side padding to match navbar and AboutUs margins */
+  max-width: 1200px; /* Match Figma content width, center the layout */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.white-background {
+  background-color: #fff; /* White background after hero */
+  padding: 0; /* No top padding, starts right after hero cards */
+  margin: 0; /* No margin to ensure smooth transition from hero */
 }
 
 #root {
