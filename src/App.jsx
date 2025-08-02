@@ -1,15 +1,15 @@
 import React from 'react';
-   import Navbar from './components/common/Navbar';
-   import Hero from './components/sections/Hero';
+import Navbar from './components/common/Navbar';
+import Hero from './components/sections/Hero';
+import './App.css';
 
-   function App() {
-     return (
-       <div>
-         <Navbar />
-         <Hero />
-         {/* Notarizations and Legitimacy sections will be added here */}
-       </div>
-     );
-   }
+function App() {
+  return (
+    <div className="app-container">
+      <Navbar />
+      <Hero />
+    </div>
+  );
+}
 
-   export default App;
+export default App;

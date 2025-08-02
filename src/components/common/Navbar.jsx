@@ -1,34 +1,36 @@
 import React from 'react';
-   import './Navbar.css';
+import './Navbar.css';
+import logo from '../../assets/image.png'
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="navbar-top">
+        <div className="navbar-top-left">
+          <span>+9761-8523-398</span>
+          <span>|</span>
+          <span>KLLG St, No.99, Pku City, ID 28289</span>
+        </div>
+        <div className="navbar-social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div className="navbar-main">
+        <div className="navbar-logo"> <img src={logo} /></div>
+        <div className="navbar-links">
+          <a href="#" className="active">Homepage</a>
+          <a href="#">About Us</a>
+          <a href="#">Facilities ▼</a>
+          <a href="#">Lawyers Verification</a>
+          <a href="#">Events ▼</a>
+          <a href="#">Download ▼</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  );
+}
 
-   function Navbar() {
-     return (
-       <nav className="navbar">
-         <div className="navbar-top">
-           <div className="navbar-top-left">
-             <span>+9761-852-386</span>
-             <span>|</span>
-             <span>KLG St, No.99, Pku City, 10 2829</span>
-           </div>
-           <div className="navbar-social">
-             <a href="#">📘</a>
-             <a href="#">🐦</a>
-             <a href="#">📸</a>
-             <a href="#">💬</a>
-           </div>
-         </div>
-         <div className="navbar-links">
-           <div className="navbar-logo">Prudent <span style={{ fontSize: '0.75rem' }}>Notary Public</span></div>
-           <a href="#">Homepage</a>
-           <a href="#">About Us</a>
-           <a href="#">Facilities</a>
-           <a href="#">Lawyers Verification</a>
-           <a href="#">Events</a>
-           <a href="#">Downloads</a>
-           <a href="#">Contact Us</a>
-         </div>
-       </nav>
-     );
-   }
-
-   export default Navbar;
+export default Navbar;
